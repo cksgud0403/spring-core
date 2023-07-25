@@ -22,7 +22,7 @@ public class ConfigurationSingletonTest {
 
         OrderServiceImpl orderService = ac.getBean("orderService", OrderServiceImpl.class);
 
-        MemoryMemberRepository memberRepository = ac.getBean("MemberRepository", MemoryMemberRepository.class);
+        MemoryMemberRepository memberRepository = ac.getBean("memberRepository", MemoryMemberRepository.class);
 
         MemberRepository memberRepository1 = memberService.getMemberRepository();
 
